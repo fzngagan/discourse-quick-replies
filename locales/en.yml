@@ -1,0 +1,18 @@
+en:
+  theme_metadata:
+    description: "Shows saved filler sentences as clickable bubbles under the composer, for members of the chosen groups."
+    settings:
+      quick_replies_groups: "Groups whose members see the quick reply bubbles in the composer."
+      quick_replies:
+        description: "The sentences shown as bubbles. Clicking one inserts its text at the cursor."
+        schema:
+          properties:
+            text:
+              label: "Text"
+              description: "The text inserted into the composer."
+            label:
+              label: "Label"
+              description: "Optional shorter text shown on the bubble. Defaults to the text."
+  quick_replies:
+    title: "Quick replies"
+    insert: "Insert: %{text}"

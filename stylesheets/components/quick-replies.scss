@@ -1,0 +1,25 @@
+.quick-replies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+  padding-block: var(--space-2);
+
+  &__bubble {
+    --d-button-border-radius: 999px;
+    --d-button-default-border: 1px solid var(--primary-low);
+    --d-button-default-border--hover: 1px solid var(--tertiary-low);
+    --d-button-default-bg-color: var(--primary-very-low);
+    --d-button-default-bg-color--hover: var(--tertiary-very-low);
+    --d-button-default-text-color: var(--primary-high);
+    --d-button-default-text-color--hover: var(--primary);
+    max-width: 100%;
+    padding: var(--space-1) var(--space-3);
+    font-size: var(--font-down-1);
+
+    .d-button-label {
+      overflow: hidden;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+    }
+  }
+}

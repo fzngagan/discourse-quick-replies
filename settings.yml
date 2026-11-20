@@ -1,0 +1,26 @@
+quick_replies_groups:
+  type: list
+  list_type: group
+  default: "3"
+  resolve_group_membership: true
+
+quick_replies:
+  type: objects
+  default:
+    - text: "Happy to help!"
+    - text: "Feel free to reach out if you need anything else."
+    - text: "Let us know if that solves it for you."
+  schema:
+    name: quick reply
+    identifier: text
+    properties:
+      text:
+        type: string
+        required: true
+        validations:
+          min_length: 1
+          max_length: 1000
+      label:
+        type: string
+        validations:
+          max_length: 60
